@@ -17,3 +17,6 @@ export type IndividualProgram = ProgramMap[
   | "PLANNED_SELF_DIRECTED"];
 
 export type GroupProgram = ProgramMap["GROUP"];
+
+type BackendProgram = keyof ProgramMap;
+type FrontendPrograme = ProgramMap[BackendProgram];
